@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Neighborhood Auto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Pricing Section */
+        #pricing {
+            padding: 60px 20px;
+            text-align: center; /* Center-align the text */
+            background-color: #fff;
+            margin: 20px auto; /* Center section */
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center; /* Center the pricing boxes */
+            flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+            max-width: 1200px; /* Optional: limit the width */
+            margin: 0 auto; /* Center the container */
+        }
+
+        .pricing-box {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%; /* Adjust this to fit your layout */
+            margin: 0 20px; /* Space between boxes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-box:hover {
+            transform: translateY(-10px); /* Effect on hover */
+        }
+
+        .pricing-box h3 {
+            background-color: #f28b82;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            font-size: 1.8em;
+        }
+
+        .pricing-box p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .pricing-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pricing-box ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .pricing-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #f28b82;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .pricing-button:hover {
+            background-color: #e57373; /* Button hover color */
+        }
+
+        /* Optional: Adjust for small screens */
+        @media (max-width: 768px) {
+            .pricing-box {
+                width: 100%; /* Make boxes full-width on smaller screens */
+                margin-bottom: 20px; /* Space between stacked boxes */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Smooth Rides, Every Day</h1>
+        <p>Your trusted daily commute service</p>
+        <a href="#get-started" class="cta-button">Get Started</a>
+    </header>
+
+<!-- Why We Stand Out Section -->
+<section id="why-us">
+    <h2>Why We Stand Out</h2>
+    <div class="features-container">
+        <div class="feature">
+            <h3><i class="feature-icon fas fa-clock"></i>Convenient Daily Commutes</h3>
+            <p>Your neighborhood auto provides seamless and hassle-free auto rides specifically designed for daily commuters. Whether you're heading to college or the office, our services ensure that you reach your destination on time and with ease, removing the stress of navigating through busy traffic.</p>
+        </div>
+        <div class="feature">
+            <h3><i class="feature-icon fas fa-wallet"></i>Affordable and Economical</h3>
+            <p>Our rides are priced competitively to offer you the best value for your money. With us, you can enjoy cost-effective transportation solutions that fit your budget, making daily travel more affordable without compromising on comfort or reliability.</p>
+        </div>
+        <div class="feature">
+            <h3><i class="feature-icon fas fa-shield-alt"></i>Safe and Reliable</h3>
+            <p>Safety and reliability are at the core of our service. We ensure that all our rides are conducted by experienced drivers who prioritize your safety and comfort. With us, you can travel with peace of mind knowing that you are in good hands.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="centered-section">
+    <h2>Services</h2>
+    
+    <!-- Daily Commute Rides -->
+    <div class="service">
+        <div class="service-image">
+            <img src="thumbsup.jpg" alt="Convenient Daily Commutes">
+        </div>
+        <div class="service-content">
+            <h3>Daily Commute Rides</h3>
+            <p>Our daily commute rides are perfect for college and office goers looking for a reliable and comfortable transportation option. We offer scheduled pick-ups and drop-offs at convenient times to match your routine. Our professional drivers ensure a smooth ride, so you can focus on preparing for your day or unwinding on your way home. With flexible booking options, you can choose between one-time rides or a monthly pass for hassle-free commuting. Enjoy the peace of mind that comes with our commitment to punctuality and safety. Ride with us and start your day stress-free.</p>
+        </div>
+    </div>
+
+    <!-- Group Rides for Students -->
+    <div class="service">
+        <div class="service-content">
+            <h3>Group Rides for Students</h3>
+            <p>We offer special group ride services tailored for students traveling to and from college. Gather your friends and enjoy the ride together while saving on transportation costs. Our spacious vehicles can accommodate multiple passengers, providing a fun and social start to your day. We understand student schedules can be hectic, so we offer flexible timings to fit your class timetable. Safety is our top priority, and all our drivers are trained to ensure a secure journey. Book your group ride today and make your commute an enjoyable part of your college experience.</p>
+        </div>
+        <div class="service-image">
+            <img src="students.jpg" alt="Affordable and Economical">
+        </div>
+    </div>
+
+    <!-- Corporate Shuttle Services -->
+    <div class="service">
+        <div class="service-image">
+            <img src="office.jpg" alt="Safe and Reliable">
+        </div>
+        <div class="service-content">
+            <h3>Corporate Shuttle Services</h3>
+            <p>Enhance employee satisfaction with our corporate shuttle services designed for office goers. We provide efficient and timely transportation solutions tailored to the needs of your workforce. Our services can be customized to include multiple pick-up and drop-off points, ensuring convenience for all employees. With real-time tracking and reliable scheduling, we help reduce the stress of daily commuting. Our fleet is well-maintained and eco-friendly, aligning with corporate sustainability goals. Partner with us to offer your employees a seamless and comfortable commute every day.</p>
+        </div>
+    </div>
+
+</section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="centered-section">
+        <h2>Plans and Pricing</h2>
+        <p>Affordable Commute Solutions</p>
+        <div class="pricing-container">
+            <div class="pricing-box">
+                <h3>Starter</h3>
+                <p>xy/month</p>
+                <ul>
+                    <li>Basic coverage areas</li>
+                    <li>Limited daily rides</li>
+                    <li>Cost-effective pricing</li>
+                </ul>
+                <a href="#" class="pricing-button">Buy starter now</a>
+            </div>
+            <div class="pricing-box">
+                <h3>Professional</h3>
+                <p>xy/month</p>
+                <ul>
+                    <li>Extended route options</li>
+                    <li>Priority support access</li>
+                    <li>More daily rides</li>
+                </ul>
+                <a href="#" class="pricing-button">Buy professional now</a>
+            </div>
+            <div class="pricing-box">
+                <h3>Enterprise</h3>
+                <p>xy/month</p>
+                <ul>
+                    <li>Customizable ride packages</li>
+                    <li>Unlimited daily rides</li>
+                    <li>Dedicated account manager</li>
+                </ul>
+                <a href="#" class="pricing-button">Buy enterprise now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="reviews-container">
+            <blockquote>
+                <p>"This service has made my daily commute so much easier!" – Shagun</p>
+            </blockquote>
+            <blockquote>
+                <p>"Great value for the price. Always on time!" – Priya</p>
+            </blockquote>
+            <blockquote>
+                <p>"Reliable, safe, and economical. Couldn't ask for better." – Rahul</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: xyz@gmail.com | Phone: +9112345678</p>
+    </footer>
+
+</body>
+</html>
